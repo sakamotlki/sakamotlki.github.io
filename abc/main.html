@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>个人主页</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="xin.ico">
+
+    <meta charset="utf-8">
+    <style>
+        @charset "utf-8";
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+        /* h5*/
+        
+        body {
+            background-color: #eceddd;
+            font-family: Arial, Verdana, 'Lucida Grande', Helvetica, sans-serif;
+            text-align: center;
+            color: #333333;
+        }
+        
+        header {
+            background: url(Img/bgheader.jpg) no-repeat #85D0ED;
+            width: 902px;
+            height: 203px;
+            padding-top: 0px;
+            margin: 0px auto;
+            color: #000000;
+        }
+        
+        header h1 {
+            float: left;
+            font-size: 2.9em;
+            padding-top: 60px;
+            padding-left: 37px;
+            font-family: Arial, verdana, sans-serif;
+            color: #37210c;
+            font-weight: bolder;
+            letter-spacing: -1px;
+        }
+        
+        .orange {
+            color: #e67e1f;
+        }
+        
+        nav {
+            list-style-type: none;
+            margin: 0px auto;
+            width: 902px;
+            background-color: #303;
+            clear: both;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            margin-left: 0px;
+            width: 902px;
+        }
+        
+        nav ul li {
+            text-align: center;
+            float: left;
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            width: 150px;
+        }
+        
+        nav ul li a {
+            display: block;
+            background-color: #37210c;
+            border-right: 1px solid #fff;
+            line-height: 2.5em;
+            margin-right: 0px;
+            padding: 8px 14px 8px 14px;
+            color: #ecf9ff;
+            font-weight: normal;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        
+        nav li a:hover {
+            color: #000;
+            background-color: #ecf9ff;
+        }
+        
+        nav ul li .selected {
+            color: #ecf9ff;
+            background-color: #e67e1f;
+        }
+        
+        aside {
+            float: left;
+            list-style: none;
+            margin-left: 10px;
+            height: 50%;
+        }
+        
+        aside ul {
+            list-style: none;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+        
+        aside li {
+            text-align: left;
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border-bottom: 1px solid #eaeada;
+        }
+        
+        aside ul li a {
+            background-image: url(Img/bullet.gif);
+            background-repeat: no-repeat;
+            background-position: left center;
+            display: block;
+            background-color: #ffffff;
+            line-height: 1.7em;
+            margin-right: 0px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 22px;
+            color: #666666;
+            font-weight: normal;
+            font-size: 0.8em;
+            text-decoration: none;
+            width: 165px;
+        }
+        
+        aside li a:hover {
+            color: #37210c;
+            background-color: #f7f7f2;
+        }
+        
+        aside .selected {
+            color: #37210c;
+            background-color: #f7f7f2;
+        }
+        
+        #content {
+            margin: 0 auto;
+            width: 902px;
+            background-color: #dfeef9;
+            height: 290px;
+            clear: both;
+        }
+        
+        section {
+            float: left;
+            width: 75%;
+            margin-right: 0px;
+            margin-top: 15px;
+            background-color: #FFF;
+            text-align: left;
+            font-size: 0.9em;
+            padding: 5px;
+        }
+        
+        section h1 {
+            display: block;
+            font-size: 0.9em;
+            width: 50px;
+            font-family: arial;
+            text-align: left;
+            font-weight: bold;
+            color: #403f3b;
+            font-family: arial;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 5px;
+            margin-left: 12px;
+        }
+        
+        section p {
+            font: normal 0.9em Arial, Verdana, Helvetica, sans-serif;
+            font-size: 0.9em;
+            color: #000000;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        footer {
+            width: 902px;
+            height: 85px;
+            clear: both;
+            margin-top: 10px;
+            background-color: #dfeef9;
+            color: #666666;
+            ;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0px;
+            padding-top: 15px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+        }
+        
+        .boys {
+            display: none;
+            text-indent: 100px;
+        }
+        
+        #menu>ul>li:hover .boys {
+            display: block;
+        }
+        
+        footer p {
+            font-size: 0.7em;
+            font-family: arial;
+            font-weight: normal;
+            line-height: 1.4em;
+            color: #555555;
+            padding: 25px 0 0 10px;
+            text-align: center;
+        }
+        
+        footer a {
+            font-size: 1em;
+            text-decration: none;
+            font-weight: normal;
+            color: #467AA7;
+            text-align: center;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+            font-weight: normal;
+            color: #467AA7;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            个人 <span class="orange"> 的BLOG </span>
+        </h1>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="selected">博客首页 </a> </li>
+            <li><a href="index1.html">关于我 </a></li>
+            <li><a href="index2.html">给我留言 </a></li>
+            <li><a href="index3.html">友情链接 </a></li>
+            <li><a href="index4.html">我的信箱 </a></li>
+            <li><a href="story2.html">时间</a>
+                <ul id="menu">
+                    <ul class="boys">
+                        <li><a href="">小乌龟</a></li>
+                        <li><a href="">大黄狗</a></li>
+                        <li><a href="">大花猫</a></li>
+                        <li><a href="">小鹦鹉</a></li>
+                        <li><a href="">小白鸽</a></li>
+                        <li><a href="">小青蛙</a></li>
+                        <li><a href="">大公鸡</a></li>
+                    </ul>
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+    <div id="content">
+        <section>
+
+            <form action="story.html">
+                <input type="submit" value="点击-->有惊喜哦">
+            </form>
+
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        </section>
+
+        <aside>
+            <ul>
+                <li><a href="index1.html" class="selected">日志 </a> </li>
+                <li><a href="index1.html">相册 </a></li>
+                <li><a href="TestSerive_3/web/index.html">个人档案 </a></li>
+                <li><a href="./第三个/1/index.html">分享 </a></li>
+                <li><a href="index1.html">音乐地带 </a></li>
+                <li><a href="index1.html">视频 </a></li>
+                <li><a href="./第五个/1/index.html">更多 </a></li>
+            </ul>
+        </aside>
+    </div>
+
+
+</body>
+
+
+</html>
